@@ -202,7 +202,7 @@ class Version:
 
         self.__download_zip(link, location, model_format)
         self.__extract_zip(location, model_format)
-        self.__reformat_yaml(location, model_format)
+#         self.__reformat_yaml(location, model_format)
 
         return Dataset(self.name, self.version, model_format, os.path.abspath(location))
 
